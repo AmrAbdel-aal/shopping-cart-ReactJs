@@ -41,7 +41,7 @@ const reducer = (state, action) => {
         if (item.amount === 0) {
           return item;
         }
-        item.amount = item.amount - 0.5;
+        item.amount = item.amount - 1;
         return { ...item, amount: item.amount };
       }
       return item;
